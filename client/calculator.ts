@@ -19,4 +19,11 @@ export class Calculator {
     rem(a: number, b: number): number {
         return a % b;
     }
+
+    notCovered(): void {
+        // this code will not be covered
+        this.add(1,2);
+        this.sub(1,2);
+        this.mul(1,2);
+    }
 }
