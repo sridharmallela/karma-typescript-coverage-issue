@@ -1,0 +1,29 @@
+{
+  "name": "karma-typescript-coverage-issue",
+  "version": "1.0.0",
+  "description": "Karma Typescript Coverage Issue",
+  "scripts": {
+    "clean": "npm run clean-dist && npm run clean-coverage",
+    "clean-coverage": "./node_modules/.bin/rimraf \"./coverage\"",
+    "clean-dist": "./node_modules/.bin/rimraf \"./dist\"",
+    "test": "cross-env NODE_ENV=test npm run clean && npm run test-unit",
+    "test-unit": "./node_modules/.bin/karma start \"./karma.conf.ts\""
+  },
+  "devDependencies": {
+    "@types/jasmine": "~3.5.10",
+    "@types/node": "~14.0.0",
+    "cross-env": "~7.0.2",
+    "jasmine": "~3.5.0",
+    "jasmine-core": "~3.5.0",
+    "karma": "~5.0.5",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-cli": "~2.0.0",
+    "karma-jasmine": "~3.1.1",
+    "karma-mocha-reporter": "~2.2.5",
+    "karma-typescript": "~5.0.2",
+    "rimraf": "~3.0.2",
+    "ts-node": "~8.10.1",
+    "tslib": "~1.12.0",
+    "typescript": "~3.9.2"
+  }
+}
